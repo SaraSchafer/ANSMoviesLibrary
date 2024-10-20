@@ -1,0 +1,66 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ffd700;
+	color: #020402;
+	padding: 1rem;
+}
+
+.navbar-left .logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #020402;
+	text-decoration: none;
+}
+
+.navbar-center .nav-links {
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-center .nav-links li {
+	margin-right: 1rem;
+}
+
+.navbar-center .nav-links a {
+	color: #020402;
+	text-decoration: none;
+}
+
+.navbar-right {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-right .cart-icon,
+.navbar-right .user-icon {
+	color: #020402;
+	text-decoration: none;
+	margin-left: 1rem;
+	position: relative;
+}
+
+.navbar-right .cart-count {
+	background-color: #f44336;
+	color: #020402;
+	border-radius: 50%;
+	padding: 0.2rem 0.5rem;
+	font-size: 0.8rem;
+	position: absolute;
+	top: -0.5rem;
+	right: -0.5rem;
+}
+
+#profile-container {
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
