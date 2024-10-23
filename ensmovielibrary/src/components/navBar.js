@@ -21,6 +21,12 @@ const Navbar = () => {
 					<li>
 						<a href="/profile">Profile</a>
 					</li>
+					<li>
+						<a href="/login">Login</a>
+					</li>
+					<li>
+						<a href="/updateMovies">Update Movies</a>
+					</li>
 				</ul>
 			</div>
 			<div className="navbar-right">
