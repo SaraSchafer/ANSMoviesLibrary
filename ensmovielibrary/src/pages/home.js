@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/App.css";
-import kingdomHeartsBanner from "../images/kingdomHeartsBanner.png";
+import BannerDisplay from "../components/bannerDisplay";
 import barbie from "../images/barbie.png";
 import image1 from "../images/tempPic1.png";
 import image2 from "../images/tempPic2.png";
@@ -31,8 +31,7 @@ const Home = () => {
 
 	return (
 		<div>
-			<h1>Welcome Home</h1>
-			<img src={kingdomHeartsBanner} alt="bannerImage" id="banner" />
+			<BannerDisplay />
 			<MovieCategory
 				areaName="All Movies"
 				imageSources={imageSources}

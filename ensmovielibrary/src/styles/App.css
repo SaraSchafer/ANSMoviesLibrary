@@ -8,11 +8,17 @@ body {
 h1 {
 	background-color: #ffd700;
 	color: #020402;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 75px;
+	margin-bottom: 0px;
 }
 
 #banner {
 	width: 100%;
-	height: 350px;
+	height: 450px;
 }
 
 #arrayImages {
