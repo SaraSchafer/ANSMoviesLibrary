@@ -1,11 +1,13 @@
 import React from "react";
 import "../styles/NavBar.css";
 import profilePicture from "../images/profilePicture.png";
+import Logo from "../images/logoNo.png";
 
 const Navbar = () => {
 	return (
 		<nav className="navbar">
 			<div className="navbar-left">
+				<img src={Logo} alt="logo" className="logoNoBackground" />
 				<a href="/" className="logo">
 					ENS Movie Library
 				</a>
