@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Profile from "./pages/profile";
 import Login from "./pages/login";
 import UpdateMovies from "./pages/updateMovies";
+import AllMovies from "./pages/allMovies";
 function App() {
 	return (
 		<div className="App">
@@ -18,6 +19,7 @@ function App() {
 					<Route path="/profile" element={<Profile />} />
 					<Route path="/login" element={<Login />} />
 					<Route path="/updateMovies" element={<UpdateMovies />} />
+					<Route path="/movies" element={<AllMovies />} />
 				</Routes>
 			</Router>
 		</div>
