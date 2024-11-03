@@ -1,0 +1,93 @@
+/* Main styling for the login page container */
+.login-page {
+	max-width: 400px;
+	margin: 100px auto;
+	padding: 30px;
+	background-color: #ffd700;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	color: #020402;
+}
+
+/* Login heading style */
+.login-heading {
+	font-size: 2em;
+	color: #020402;
+	margin-bottom: 20px;
+}
+
+/* Form styling */
+.login-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Center-align form elements */
+	gap: 20px;
+}
+
+/* Label styling */
+.form-group {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Center-align labels */
+}
+
+.form-group label {
+	font-weight: bold;
+	margin-bottom: 8px;
+	color: #020402;
+	font-size: 1em;
+	text-align: left;
+	width: 80%;
+}
+
+/* Input field styling */
+.form-group input {
+	width: 80%; /* Set a consistent width */
+	padding: 12px;
+	font-size: 1em;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+	transition: border-color 0.3s;
+}
+
+/* Input field focus color */
+.form-group input:focus {
+	border-color: #d40e0e;
+}
+
+/* Login button styling */
+.login-button {
+	width: 80%; /* Align button width with input fields */
+	padding: 12px;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #ffd700;
+	background-color: #d40e0e;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.login-button:hover {
+	background-color: #a10c0c;
+}
+
+/* Sign-up prompt styling */
+.signup-prompt {
+	margin-top: 15px;
+	font-size: 1em;
+	color: #020402;
+}
+
+.signup-prompt a {
+	color: #d40e0e; /* Updated to match theme */
+	text-decoration: underline;
+}
+
+.signup-prompt a:hover {
+	text-decoration: none;
+}
