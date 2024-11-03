@@ -97,3 +97,30 @@ h1 {
 .show {
 	display: block;
 }
+/* Signup Prompt Styling */
+.signup-prompt,
+.login-prompt {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.signup-prompt a,
+.login-prompt a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-prompt a:hover,
+.login-prompt a:hover {
+    text-decoration: underline;
+}
+
+/* Make the form more centered and balanced on larger screens */
+@media (min-width: 768px) {
+    .login-page,
+    .new-account-form {
+        margin-top: 50px;  /* Adjust margin for larger screens */
+    }
+}
