@@ -7,26 +7,28 @@ import Profile from "./pages/profile";
 import Login from "./pages/login";
 import UpdateMovies from "./pages/updateMovies";
 import AllMovies from "./pages/allMovies";
-import NewAccount from "./pages/newAccount";  // Import NewAccount component
+import NewAccount from "./pages/newAccount";
+import Payment from "./pages/updatePayment";
 
 function App() {
-    return (
-        <div className="App">
-            <Router>
-                <Navbar />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/profile" element={<Profile />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/updateMovies" element={<UpdateMovies />} />
-                    <Route path="/movies" element={<AllMovies />} />
-                    <Route path="/signup" element={<NewAccount />} />  {/* Added signup route */}
-                </Routes>
-            </Router>
-        </div>
-    );
+	return (
+		<div className="App">
+			<Router>
+				<Navbar />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/home" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/profile" element={<Profile />} />
+					<Route path="/login" element={<Login />} />
+					<Route path="/updateMovies" element={<UpdateMovies />} />
+					<Route path="/movies" element={<AllMovies />} />
+					<Route path="/signup" element={<NewAccount />} />{" "}
+					<Route path="/payment" element={<Payment />} />
+				</Routes>
+			</Router>
+		</div>
+	);
 }
 
 export default App;

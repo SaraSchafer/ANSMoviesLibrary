@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "../styles/App.css";
 import profilePicture from "../images/profilePicture.png";
+import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
 	const [currentPassword, setCurrentPassword] = useState("");
 	const [newPassword, setNewPassword] = useState("");
 	const [retypeNewPassword, setRetypeNewPassword] = useState("");
 	const user = "John Doe";
+	const navigate = useNavigate();
 
 	return (
 		<div>
@@ -66,7 +68,7 @@ const Profile = () => {
 						<button
 							className="profileButton"
 							onClick={() => {
-								alert("Hello World");
+								navigate("/updatePayment");
 							}}>
 							Update Card
 						</button>
