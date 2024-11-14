@@ -24,7 +24,7 @@ function App() {
 					<Route path="/updateMovies" element={<UpdateMovies />} />
 					<Route path="/movies" element={<AllMovies />} />
 					<Route path="/signup" element={<NewAccount />} />{" "}
-					<Route path="/payment" element={<Payment />} />
+					<Route path="/updatePayment" element={<Payment />} />
 				</Routes>
 			</Router>
 		</div>
