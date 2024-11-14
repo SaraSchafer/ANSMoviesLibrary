@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/App.css";
+import "../styles/profile.css";
 import profilePicture from "../images/profilePicture.png";
 import { useNavigate } from "react-router-dom";
 
@@ -11,19 +11,14 @@ const Profile = () => {
 	const navigate = useNavigate();
 
 	return (
-		<div>
-			<h1>Profile</h1>
-			<div className="profileBox">
-				<div className="profileContent">
-					<img
-						src={profilePicture}
-						alt="PP"
-						id="profileImg"
-						className="profile-picture column column1"
-					/>
-					<div className="column column2">
+		<div className="App">
+			<h1 className="profile-heading">Profile</h1>
+			<div className="login-page">
+				<div className="profile-content">
+					<img src={profilePicture} alt="PP" className="profile-picture" />
+					<div>
 						<h2>Username: {user}</h2>
-						<div className="profilePassword">
+						<div className="form-group">
 							<label htmlFor="currentPassword">Current Password:</label>
 							<input
 								type="password"
@@ -31,18 +26,20 @@ const Profile = () => {
 								value={currentPassword}
 								onChange={(e) => setCurrentPassword(e.target.value)}
 								required
+								className="form-input"
 							/>
 						</div>
-						<div className="profilePassword">
+						<div className="form-group">
 							<label htmlFor="newPassword">New Password:</label>
 							<input
 								type="password"
 								id="newPassword"
 								value={newPassword}
 								onChange={(e) => setNewPassword(e.target.value)}
+								className="form-input"
 							/>
 						</div>
-						<div className="profilePassword">
+						<div className="form-group">
 							<label htmlFor="retypeNewPassword">Retype New Password:</label>
 							<input
 								type="password"
@@ -50,11 +47,12 @@ const Profile = () => {
 								value={retypeNewPassword}
 								onChange={(e) => setRetypeNewPassword(e.target.value)}
 								required
+								className="form-input"
 							/>
 						</div>
 
 						<button
-							className="profileButton"
+							className="login-button"
 							onClick={() => {
 								if (newPassword === retypeNewPassword) {
 									alert("Password changed successfully");
@@ -64,17 +62,17 @@ const Profile = () => {
 							}}>
 							Change Password
 						</button>
-						<br></br>
+						<br />
 						<button
-							className="profileButton"
+							className="login-button"
 							onClick={() => {
 								navigate("/updatePayment");
 							}}>
 							Update Card
 						</button>
-						<br></br>
+						<br />
 						<button
-							className="profileButton"
+							className="login-button"
 							onClick={() => {
 								alert("Minecrafting");
 							}}>

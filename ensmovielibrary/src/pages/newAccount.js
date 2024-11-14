@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import '../styles/App.css';
+import '../styles/login.css';
 
 const NewAccount = () => {
     const [email, setEmail] = useState("");
@@ -13,15 +13,14 @@ const NewAccount = () => {
             alert("Passwords do not match!");
             return;
         }
-        // Add logic to create a new account here
         alert("Account created successfully!");
     };
 
     return (
         <div className="App">
-            <h1 className="new-account-heading">Create New Account</h1>
-            <div className="new-account-form">
-                <form onSubmit={handleCreateAccount} className="new-account-form-content">
+            <h1 className="login-heading">Create New Account</h1>  {/* Use 'login-heading' for consistency */}
+            <div className="login-page">  {/* Use 'login-page' to match the login page style */}
+                <form onSubmit={handleCreateAccount} className="login-form">  {/* Use 'login-form' */}
                     <div className="form-group">
                         <label htmlFor="email">Email:</label>
                         <input
@@ -55,9 +54,9 @@ const NewAccount = () => {
                             className="form-input"
                         />
                     </div>
-                    <button type="submit" className="create-account-button">Sign Up</button>
+                    <button type="submit" className="login-button">Sign Up</button>  {/* Use 'login-button' */}
                 </form>
-                <p className="login-prompt">
+                <p className="signup-prompt">  {/* Use 'signup-prompt' to match the style */}
                     Already have an account? <Link to="/login">Login</Link>
                 </p>
             </div>
