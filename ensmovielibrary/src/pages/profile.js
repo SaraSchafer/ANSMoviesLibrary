@@ -15,11 +15,7 @@ const Profile = () => {
 			<h1 className="profile-heading">Profile</h1>
 			<div className="login-page">
 				<div className="profile-content">
-					<img
-						src={profilePicture}
-						alt="PP"
-						className="profile-picture"
-					/>
+					<img src={profilePicture} alt="PP" className="profile-picture" />
 					<div>
 						<h2>Username: {user}</h2>
 						<div className="form-group">
