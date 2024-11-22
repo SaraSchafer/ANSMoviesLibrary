@@ -32,6 +32,12 @@ const Navbar = () => {
 					<li>
 						<a href="/updateMovies">Update Movies</a>
 					</li>
+					<li>
+						<a href="/movieInfo">Movie Info</a>
+					</li>
+					<li>
+						<a href="/movieScreen">Screen</a>
+					</li>
 				</ul>
 			</div>
 			<div className="navbar-right">
