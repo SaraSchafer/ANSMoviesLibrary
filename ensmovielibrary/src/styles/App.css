@@ -202,3 +202,49 @@ h1 {
 	text-align: center;
 	cursor: pointer;
 }
+
+.movieScreenContainer {
+	position: fixed;
+	width: 100%;
+	height: 91%;
+}
+
+.movieInfo {
+	position: relative;
+	z-index: 2;
+	color: white;
+	padding: 20px;
+}
+
+.columnComments {
+	margin-bottom: 15px;
+}
+
+.column1Comments {
+	width: 60%;
+	padding-top: 10%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: fixed;
+	padding-right: 20%;
+}
+
+.column2Comments {
+	width: 40%;
+	/* flex-grow: 1; */
+	display: flex;
+	padding-top: 10px;
+}
+
+.column1Comments,
+.column2Comments {
+	position: relative;
+	margin-top: 20px; /* Add margin to move below h2 */
+}
+
+.movieInfo {
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+}

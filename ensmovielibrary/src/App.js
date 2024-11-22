@@ -9,6 +9,8 @@ import UpdateMovies from "./pages/updateMovies";
 import AllMovies from "./pages/allMovies";
 import NewAccount from "./pages/newAccount";
 import Payment from "./pages/updatePayment";
+import MovieInfo from "./pages/movieInfo";
+import MovieScreen from "./pages/movieScreen";
 
 function App() {
 	return (
@@ -23,8 +25,10 @@ function App() {
 					<Route path="/login" element={<Login />} />
 					<Route path="/updateMovies" element={<UpdateMovies />} />
 					<Route path="/movies" element={<AllMovies />} />
-					<Route path="/signup" element={<NewAccount />} />{" "}
+					<Route path="/signup" element={<NewAccount />} />
 					<Route path="/updatePayment" element={<Payment />} />
+					<Route path="/movieInfo" element={<MovieInfo />} />
+					<Route path="/movieScreen" element={<MovieScreen />} />
 				</Routes>
 			</Router>
 		</div>
