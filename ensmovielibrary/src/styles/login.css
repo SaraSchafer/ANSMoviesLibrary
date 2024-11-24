@@ -76,6 +76,25 @@
 	background-color: #a10c0c;
 }
 
+/* Logout button styling */
+.logout-button {
+	margin-top: 20px;
+	width: 80%; /* Align button width with input fields */
+	padding: 12px;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #ffd700;
+	background-color: #d40e0e;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+	background-color: #a10c0c;
+}
+
 /* Sign-up prompt styling */
 .signup-prompt {
 	margin-top: 15px;
