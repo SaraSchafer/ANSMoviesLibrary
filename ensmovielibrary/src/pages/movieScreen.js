@@ -2,6 +2,12 @@ import React from "react";
 import "../styles/App.css"; // Import the same CSS for consistency
 
 const movieScreen = () => {
+	localStorage.setItem("lastMovie", "neal illistration zeus");
+	localStorage.setItem(
+		"lastMovieImg",
+		"https://i.ytimg.com/vi/gtKNgFftV5Y/maxresdefault.jpg"
+	);
+	localStorage.setItem("stoppingTime", "1:00:00");
 	return (
 		<div className="movieScreenContainer">
 			<iframe

@@ -31,9 +31,11 @@ const AllMovies = () => {
 	const movies = [];
 
 	for (let i = 0; i < imageSources.length; i += imagesPerRow) {
-		const row = imageSources
-			.slice(i, i + imagesPerRow)
-			.map((src, j) => <img src={src} alt={`movie${i + j}`} key={i + j} />);
+		const row = imageSources.slice(i, i + imagesPerRow).map((src, j) => (
+			<a href="/movieInfo" key={i + j}>
+				<img src={src} alt={`movie${i + j}`} />
+			</a>
+		));
 
 		movies.push(
 			<div key={i} className="movie-container">

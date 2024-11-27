@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import leftArrow from "../images/leftArrow.png";
 import rightArrow from "../images/rightArrow.png";
 import "../styles/App.css";
+import { useNavigate } from "react-router-dom";
 
 const MovieCategory = ({ areaName, imageSources, imagesPerPage }) => {
 	const [startIndex, setStartIndex] = useState(0);
+	const navigate = useNavigate();
 
 	const handlePrevClick = () => {
 		setStartIndex((prevIndex) => Math.max(prevIndex - imagesPerPage, 0));
@@ -16,6 +18,14 @@ const MovieCategory = ({ areaName, imageSources, imagesPerPage }) => {
 		);
 	};
 
+	const handleImageClick = (src) => {
+		let movieClicked = src;
+		// movieClicked = movieClicked.split("/").pop();
+		localStorage.setItem("movieClicked", movieClicked);
+		localStorage.setItem("cameFromBanner", "false");
+		navigate("/movieInfo");
+	};
+
 	const images = imageSources
 		.slice(startIndex, startIndex + imagesPerPage)
 		.map((src, i) => (
@@ -24,6 +34,8 @@ const MovieCategory = ({ areaName, imageSources, imagesPerPage }) => {
 				alt={`arrayImage${startIndex + i}`}
 				id="arrayImages"
 				key={startIndex + i}
+				onClick={() => handleImageClick(src)}
+				style={{ cursor: "pointer" }}
 			/>
 		));
 
