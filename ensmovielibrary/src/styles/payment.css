@@ -1,58 +1,56 @@
-.column {
-	margin-bottom: 15px;
-}
-
-.column1 {
-	width: 60%;
-}
-
-.column2 {
-	width: 40%;
-	display: flex;
-	align-items: center;
-}
-
 .paymentArea {
-	background-color: white;
-	max-width: 50%;
-	margin: 0 auto;
-	padding: 20px;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-color: #ffd700; /* Same yellow as the profile page */
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 	text-align: left;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 .paymentArea label {
 	font-weight: bold;
-	margin-bottom: 8px;
 	color: #020402;
 	font-size: 1em;
-	width: 80%;
+	margin-bottom: 5px;
 }
 
-.paymentArea {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-#myCard {
+.paymentArea input {
 	width: 100%;
-	padding: 30px 0;
-	text-align: left;
-	margin-top: 15px;
-}
-#myPaypal {
-	width: 100%;
-	padding: 30px 0;
-	text-align: left;
-	margin-top: 15px;
-}
-.paymentArea button {
-	padding: 10px 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
 	font-size: 1em;
+	outline: none;
+	transition: border-color 0.3s ease;
+}
+
+.paymentArea input:focus {
+	border-color: #d40e0e;
+}
+
+.paymentArea button {
+	width: 100%;
+	padding: 12px;
+	font-size: 1em;
+	font-weight: bold;
 	border: none;
 	border-radius: 5px;
 	background-color: #d40e0e;
-	color: white;
+	color: #ffd700; /* Yellow text */
 	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.paymentArea button:hover {
+	background-color: #a10c0c;
+}
+
+.paymentArea .form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
