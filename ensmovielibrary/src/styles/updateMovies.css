@@ -1,0 +1,89 @@
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffd700; /* Updated background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align content */
+    color: #020402; /* Updated font color */
+}
+
+.header {
+    font-size: 2em; /* Increased font size for prominence */
+    color: #020402; /* Updated to match theme */
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align form elements */
+    gap: 20px; /* Add consistent spacing */
+}
+
+.label {
+    font-weight: bold;
+    color: #020402; /* Updated color */
+    font-size: 1em;
+    text-align: left;
+    width: 80%;
+}
+
+.input,
+.textarea,
+.select {
+    width: 80%; /* Consistent width for inputs */
+    padding: 12px; /* Increased padding for better UX */
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+    border-color: #d40e0e; /* Highlighted focus color */
+}
+
+.textarea {
+    resize: none; /* Prevent uncontrolled resizing */
+}
+
+.button {
+    width: 80%; /* Align button with input fields */
+    padding: 12px; /* Consistent padding */
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ffd700; /* Contrast with button background */
+    background-color: #d40e0e; /* Updated color scheme */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #a10c0c; /* Slightly darker hover color */
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #d40e0e; /* Updated to match error color */
+    text-align: center;
+}
+
+/* Multi-select dropdown styling */
+.select {
+    background-color: #fff;
+}
+
+.select option {
+    padding: 5px;
+    background-color: #fff;
+    color: #333;
+}
