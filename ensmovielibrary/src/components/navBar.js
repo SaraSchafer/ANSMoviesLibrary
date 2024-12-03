@@ -115,7 +115,7 @@ const Navbar = () => {
 			<div className="navbar-left">
 				<img src={Logo} alt="logo" className="logoNoBackground" />
 				<a href="/" className="logo">
-					ENS Movie Library
+					ANS Movie Library
 				</a>
 			</div>
 			<div className="navbar-center">
