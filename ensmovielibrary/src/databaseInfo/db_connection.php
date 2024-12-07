@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$dbname = "ens_movie_library";
+$dbname = "ens_movies";
 $username = "root";
 $password = "";
 
