@@ -11,7 +11,7 @@ header("Content-Type: application/json");
 ob_clean();
 
 try {
-    $conn = new mysqli("localhost", "root", "root", "ens_movies");
+    $conn = new mysqli("localhost", "root", "", "ens_movies");
     if ($conn->connect_error) {
         throw new Exception("Database connection failed.");
     }
