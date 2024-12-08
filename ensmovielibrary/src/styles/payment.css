@@ -1,0 +1,82 @@
+.payment-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+}
+
+.page-heading {
+    text-align: center;
+    font-size: 2.5em;
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+/* Form Section Styling */
+.payment-area {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-section {
+    background: #fdfbfb;
+    border: 1px solid #dcdde1;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.section-heading {
+    font-size: 1.5em;
+    color: #e74c3c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input Field Styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+/* Button Styling */
+.form-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #c0392b;
+    box-shadow: 0 4px 15px rgba(192, 57, 43, 0.5);
+}
